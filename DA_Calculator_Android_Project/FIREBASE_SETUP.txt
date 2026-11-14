@@ -1,0 +1,10 @@
+FIREBASE CONFIGURATION FOR THE ANDROID APP
+
+1. Open Firebase Console for project da-calculator-b6fdd.
+2. Authentication > Settings > Authorized domains.
+3. Add appassets.androidplatform.net.
+4. Authentication > Sign-in method: ensure Email/Password is enabled.
+5. Confirm Admin and common-user accounts exist and their UIDs match the IDs in index.html.
+6. Firestore Database > Rules: publish the provided firestore.rules if not already published.
+
+The app uses Firebase's Web SDK inside Android WebView. Internet is required for authentication, Firestore access and password-reset email. Never put account passwords or service-account private keys in the project.
